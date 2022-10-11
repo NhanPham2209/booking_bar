@@ -101,4 +101,5 @@ class M_booking_bar extends database
         return $this->execute(array($menu_id,$booking_menu_so_luong,$booking_menu_id));
    
     } 
+    
 }

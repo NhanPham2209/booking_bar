@@ -1,4 +1,5 @@
 <?php foreach($khach_hang as $list => $item) { ?>
+    
 <div class="content-wrapper">
     <div class="card">
         <div class="card-header">
@@ -59,9 +60,13 @@
                                 <div class="col-lg-4 col-md-4 form-group">
                                     <select class="form-control" name="menuName[]">
                                         <option>Chọn món ăn</option>
-                                        <?php  foreach($menu as $key => $value) { ?>
-                                        <option value="<?php echo$value->menu_id; ?>"><?php echo$value->menu_name; ?>
-                                        </option>
+                                        <?php 
+                                        
+                                         foreach($menu as $key => $value) { ?>
+                                            
+
+                                        <option value="<?php echo$value->menu_id; ?>"><?php echo$value->menu_name; ?> </option>
+                                        
                                         <?php  } ?>
                                     </select>
                                 </div>
@@ -78,6 +83,9 @@
                                 </div>
                             </div>
                         </div>
+
+                        
+
                     </div>
                     <div class="form-group">
                         <label for="">Số lượng người</label>
@@ -136,7 +144,7 @@
                         <input type="submit" value="Cập nhật" class="btn btn-success float-left" name="booking_bar_edit">
                     </div>
                     <div class="div">
-                        <?php print_r($id_booking_menu) ?>
+                        <?php print_r($print_khach_hang) ?>
                     </div>
                 </div>
             </form>

@@ -71,6 +71,7 @@
                         ?>
                         </td>
                     </tr>
+
                     <?php
                         $khach_hang_id   = $item->booking_khach_hang_id;
                         $print_khach_hang = $m_booking->select_booking_bar_by_id($khach_hang_id);
@@ -96,7 +97,9 @@
                         </td>
                     </tr>
                     <?php } ?>
+                    
                     <tr>
+
                         <td>Số lượng người</td>
                         <td>
                             <?php 

@@ -61,10 +61,7 @@ class C_booking_bar{
                     foreach($khach_hang as $list => $item) { 
                         $khach_hang_id   = $item->booking_khach_hang_id;
                         $print_khach_hang = $m_booking->select_booking_bar_by_id($khach_hang_id);
-                        foreach($print_khach_hang as $key_5 => $value_5){
-                            $id_booking_menu = $value_5->booking_menu_id;
-                            // $result_booking_menu    = $m_module->edit_booking_menu($id_booking_menu,$menu_id,$booking_menu_so_luong);
-                        }
+                        
                     }
                     
                     
